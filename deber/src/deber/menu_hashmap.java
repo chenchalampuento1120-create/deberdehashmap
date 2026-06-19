@@ -19,3 +19,18 @@ public class menu_hashmap {
 
         Scanner sc = new Scanner(System.in);
         int opcion;
+
+        do {
+
+            System.out.println("==== MENU DE PELICULAS ====");
+            System.out.println("1. Agregar pelicula");
+            System.out.println("2. Listar peliculas");
+            System.out.println("3. Actualizar pelicula");
+            System.out.println("4. Eliminar pelicula");
+            System.out.println("5. Salir");
+            System.out.print("Ingrese una opcion: ");
+
+            while (!sc.hasNextInt()) {
+                System.out.println("Error ingrese solo numeros");
+                sc.next();
+            }
