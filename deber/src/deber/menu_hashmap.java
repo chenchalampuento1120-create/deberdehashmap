@@ -65,3 +65,15 @@ public class menu_hashmap {
         } while (opcion != 5);
 
     }
+
+    public static void insertar_pelicula() {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese el codigo de la pelicula: ");
+        String codigo = sc.nextLine();
+
+        System.out.print("Ingrese el nombre de la pelicula: ");
+        String nombre = sc.nextLine();
+
+        System.out.print("Ingrese el genero: ");
