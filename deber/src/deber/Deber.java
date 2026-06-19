@@ -20,6 +20,9 @@ public class Deber{
         
         ComprasView vista = new ComprasView();
         vista.menu();
+        
+        carros_view vista = new carros_view();
+        vista.menu();
 
     }
 }
