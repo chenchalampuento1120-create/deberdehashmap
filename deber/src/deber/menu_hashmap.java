@@ -115,3 +115,21 @@ public class menu_hashmap {
         String codigo = sc.nextLine();
 
         if (peliculas.containsKey(codigo)) {
+
+            System.out.print("Nuevo nombre: ");
+            String nombre = sc.nextLine();
+
+            System.out.print("Nuevo genero: ");
+            String genero = sc.nextLine();
+
+            System.out.print("Nuevo año: ");
+            String anio = sc.nextLine();
+
+            peliculas.put(codigo, nombre + " " + genero + " " + anio);
+
+            System.out.println("Pelicula actualizada correctamente");
+
+        } else {
+            System.out.println("No se encontro la pelicula");
+        }
+    }
