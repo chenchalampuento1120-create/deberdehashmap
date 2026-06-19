@@ -22,20 +22,20 @@ public class carros_view {
     System.out.print("Seleccione: ");
         int opcion = sc.nextInt();
 
-    switch (opcion) {
+switch (opcion) {
 
         case 1:
-        System.out.println("Codigo:");
+    System.out.println("Codigo:");
             int codigo = sc.nextInt();
             sc.nextLine();
 
-        System.out.println("Marca:");
+    System.out.println("Marca:");
             String marca = sc.nextLine();
 
-        System.out.println("Modelo:");
+    System.out.println("Modelo:");
             String modelo = sc.nextLine();
 
-        System.out.println("Precio:");
+    System.out.println("Precio:");
             double precio = sc.nextDouble();
 
             carros_model carro = new carros_model(codigo, marca, modelo, precio);
@@ -46,48 +46,48 @@ public class carros_view {
                break;
 
         case 3:
-           System.out.println("Codigo:");
+    System.out.println("Codigo:");
                codigo = sc.nextInt();
                sc.nextLine();
 
-           System.out.println("Nueva marca:");
+    System.out.println("Nueva marca:");
                     marca = sc.nextLine();
 
-           System.out.println("Nuevo modelo:");
+    System.out.println("Nuevo modelo:");
                     modelo = sc.nextLine();
 
-            System.out.println("Nuevo precio:");
+    System.out.println("Nuevo precio:");
                precio = sc.nextDouble();
 
                 if (controlador.actualizarCarro(codigo, marca, modelo, precio)) {
-            System.out.println("Carro actualizado");
+    System.out.println("Carro actualizado");
                 } else {
-            System.out.println("Carro no encontrado");
+    System.out.println("Carro no encontrado");
                     }
                 break;
         case 4:
-             System.out.println("Codigo:");
+    System.out.println("Codigo:");
                codigo = sc.nextInt();
 
                if (controlador.eliminarCarro(codigo)) {
-                   System.out.println("Carro eliminado");
+    System.out.println("Carro eliminado");
                 } else {
-               System.out.println("Carro no encontrado");
+    System.out.println("Carro no encontrado");
                 }
                break;
 
         case 5:
-            System.out.println("Hasta luego");
-            System.exit(0);
+   System.out.println("Hasta luego");
+        System.exit(0);
             break;
 
         default:
-            System.out.println("Opcion incorrecta");
+    System.out.println("Opcion incorrecta");
         }
     }
      }
 }
-
+//gracias por ver este codigo 
              
 
                
