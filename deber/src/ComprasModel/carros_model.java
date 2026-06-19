@@ -37,5 +37,22 @@ public class carros_model {
     public double getPrecio() {
         return precio;
     }
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+
 
     
