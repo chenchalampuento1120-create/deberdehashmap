@@ -93,3 +93,16 @@ public class menu_hashmap {
             System.out.println("No existen peliculas registradas");
             return;
         }
+
+        for (String codigo : peliculas.keySet()) {
+
+            String[] datos = peliculas.get(codigo).split(" ");
+
+            System.out.println("======================");
+            System.out.println("Codigo: " + codigo);
+            System.out.println("Nombre: " + datos[0]);
+            System.out.println("Genero: " + datos[1]);
+            System.out.println("Año: " + datos[2]);
+            System.out.println("======================");
+        }
+    }
