@@ -133,3 +133,24 @@ public class menu_hashmap {
             System.out.println("No se encontro la pelicula");
         }
     }
+
+    public static void eliminar_pelicula() {
+
+        Scanner sc = new Scanner(System.in);
+
+        if (peliculas.isEmpty()) {
+            System.out.println("No existen peliculas registradas");
+            return;
+        }
+
+        System.out.print("Ingrese el codigo de la pelicula a eliminar: ");
+        String codigo = sc.nextLine();
+
+        if (peliculas.containsKey(codigo)) {
+            peliculas.remove(codigo);
+            System.out.println("Pelicula eliminada correctamente");
+        } else {
+            System.out.println("No se encontro la pelicula");
+        }
+    }
+}
