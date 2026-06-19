@@ -106,3 +106,12 @@ public class menu_hashmap {
             System.out.println("======================");
         }
     }
+
+    public static void actualizar_pelicula() {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese el codigo de la pelicula: ");
+        String codigo = sc.nextLine();
+
+        if (peliculas.containsKey(codigo)) {
