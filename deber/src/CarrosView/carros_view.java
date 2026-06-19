@@ -30,5 +30,25 @@ public class carros_view {
 
             int opcion = sc.nextInt();
     }
+        switch (opcion) {
+
+                case 1:
+                    System.out.println("Codigo:");
+                    int codigo = sc.nextInt();
+                    sc.nextLine();
+
+                    System.out.println("Marca:");
+                    String marca = sc.nextLine();
+
+                    System.out.println("Modelo:");
+                    String modelo = sc.nextLine();
+
+                    System.out.println("Precio:");
+                    double precio = sc.nextDouble();
+
+                    carros_model carro = new carros_model(codigo, marca, modelo, precio);
+                    controlador.agregarCarro(carro);
+                    break;
+
     }
-    
+    }
