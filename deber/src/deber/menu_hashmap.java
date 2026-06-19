@@ -77,3 +77,12 @@ public class menu_hashmap {
         String nombre = sc.nextLine();
 
         System.out.print("Ingrese el genero: ");
+        String genero = sc.nextLine();
+
+        System.out.print("Ingrese el año: ");
+        String anio = sc.nextLine();
+
+        peliculas.put(codigo, nombre + " " + genero + " " + anio);
+
+        System.out.println("Pelicula registrada con exito");
+    }
