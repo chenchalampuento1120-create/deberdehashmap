@@ -31,9 +31,8 @@ public class carros_controller {
         }
         return null;
     }
-}
- public boolean eliminarCarro(int codigo) {
-        carros_model carro = BuscarCarro(codigo);
+    public boolean eliminarCarro(int codigo) {
+        carros_model carro = buscarCarro(codigo);
 
         if (carro != null) {
             listaCarros.remove(carro);
@@ -42,6 +41,18 @@ public class carros_controller {
 
         return false;
     }
- public boolean actualizarCarro(int codigo, String marca, String modelo, double precio) {
+    public boolean actualizarCarro(int codigo, String marca, String modelo, double precio) {
         carros_model carro = buscarCarro(codigo);
 
+        if (carro != null) {
+            carro.setMarca(marca);
+            carro.setModelo(modelo);
+            carro.setPrecio(precio);
+            return true;
+        }
+
+        return false;
+    }
+}
+
+ 
