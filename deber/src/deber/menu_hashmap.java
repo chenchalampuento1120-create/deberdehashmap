@@ -8,6 +8,6 @@ package deber;
  *
  * @author PC
  */
-public class CarrosCRUDMVC {
+public class menu_hashmap {
     
 }
