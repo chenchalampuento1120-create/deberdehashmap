@@ -21,8 +21,11 @@ public class menu_hashmap {
         int opcion;
 
         do {
-
-            System.out.println("==== MENU DE PELICULAS ====");
+            
+            System.out.println("==================");
+            System.out.println("SISTEMA DE PELICULAS");
+            System.out.println("==================");
+            System.out.println("Peliculas registradas: " + peliculas.size());
             System.out.println("1. Agregar pelicula");
             System.out.println("2. Listar peliculas");
             System.out.println("3. Actualizar pelicula");
@@ -145,10 +148,11 @@ public class menu_hashmap {
 
         System.out.print("Ingrese el codigo de la pelicula a eliminar: ");
         String codigo = sc.nextLine();
+        
 
         if (peliculas.containsKey(codigo)) {
             peliculas.remove(codigo);
-            System.out.println("Pelicula eliminada correctamente");
+            System.out.println("La pelicula fue eliminada correctamente");
         } else {
             System.out.println("No se encontro la pelicula");
         }
