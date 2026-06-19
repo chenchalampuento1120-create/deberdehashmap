@@ -52,6 +52,12 @@ public class carros_model {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+    
+    @Override
+    public String toString() {
+        return "Codigo: " + codigo +
+               " | Marca: " + marca +
+              
 
 
 
