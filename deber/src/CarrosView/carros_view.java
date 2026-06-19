@@ -3,52 +3,43 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package CarrosView;
-    import java.util.Scanner;
+import java.util.Scanner;
 import CarrosController.carros_controller;
 import CarrosModel.carros_model;
 
-/**
- *
- * @author PC
- */
 public class carros_view {
-    
-}
-    Scanner sc = new Scanner(System.in);
+     Scanner sc = new Scanner(System.in);
     carros_controller controlador = new carros_controller();
+ public void menu() {
+    while (true) {
 
-    public void menu() {
-        while (true) {
+    System.out.println("===== CONCESIONARIO =====");
+    System.out.println("1. Agregar carro");
+    System.out.println("2. Mostrar carros");
+    System.out.println("3. Actualizar carro");
+    System.out.println("4. Eliminar carro");
+    System.out.println("5. Salir");
+    System.out.print("Seleccione: ");
+        int opcion = sc.nextInt();
 
-            System.out.println("===== CONCESIONARIO =====");
-            System.out.println("1. Agregar carro");
-            System.out.println("2. Mostrar carros");
-            System.out.println("3. Actualizar carro");
-            System.out.println("4. Eliminar carro");
-            System.out.println("5. Salir");
-            System.out.print("Seleccione: ");
+    switch (opcion) {
 
-            int opcion = sc.nextInt();
-    }
-        switch (opcion) {
+        case 1:
+        System.out.println("Codigo:");
+            int codigo = sc.nextInt();
+            sc.nextLine();
 
-                case 1:
-                    System.out.println("Codigo:");
-                    int codigo = sc.nextInt();
-                    sc.nextLine();
+        System.out.println("Marca:");
+            String marca = sc.nextLine();
 
-                    System.out.println("Marca:");
-                    String marca = sc.nextLine();
+        System.out.println("Modelo:");
+            String modelo = sc.nextLine();
 
-                    System.out.println("Modelo:");
-                    String modelo = sc.nextLine();
+        System.out.println("Precio:");
+            double precio = sc.nextDouble();
 
-                    System.out.println("Precio:");
-                    double precio = sc.nextDouble();
+            carros_model carro = new carros_model(codigo, marca, modelo, precio);
+            controlador.agregarCarro(carro);
+            break;
 
-                    carros_model carro = new carros_model(codigo, marca, modelo, precio);
-                    controlador.agregarCarro(carro);
-                    break;
-
-    }
-    }
+               
