@@ -32,3 +32,16 @@ public class carros_controller {
         return null;
     }
 }
+ public boolean eliminarCarro(int codigo) {
+        carros_model carro = BuscarCarro(codigo);
+
+        if (carro != null) {
+            listaCarros.remove(carro);
+            return true;
+        }
+
+        return false;
+    }
+ public boolean actualizarCarro(int codigo, String marca, String modelo, double precio) {
+        carros_model carro = buscarCarro(codigo);
+
