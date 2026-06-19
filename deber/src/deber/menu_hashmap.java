@@ -8,6 +8,9 @@ package deber;
  *
  * @author PC
  */
+import java.util.Scanner;
+import java.util.HashMap;
+
 public class menu_hashmap {
     
 }
