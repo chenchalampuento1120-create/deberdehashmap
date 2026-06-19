@@ -15,6 +15,9 @@ public class ComprasModel {
     public ArrayList<String> historial;
     public HashMap<String, Integer> carrito;
     
+    public ComprasModel(){
+        productos= new ArrayList<>();
+    }
     
     
 }
