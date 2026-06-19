@@ -57,7 +57,11 @@ public class carros_model {
     public String toString() {
         return "Codigo: " + codigo +
                " | Marca: " + marca +
-              
+               " | Modelo: " + modelo +
+               " | Precio: $" + precio;
+    }
+}
+    
 
 
 
