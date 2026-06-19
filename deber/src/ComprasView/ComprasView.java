@@ -31,6 +31,10 @@ public class ComprasView {
             System.out.println("4. Eliminar compra");
             System.out.println("5. Salir");
             System.out.print("Seleccione una opcion: ");
+            while (!sc.hasNextInt()) {
+                System.out.println("Error ingrese solo numeros");
+                sc.next();
+            }
 
             int opcion = sc.nextInt();
 
@@ -92,12 +96,11 @@ public class ComprasView {
 
                 case 5:
                     System.out.println("Hasta luego");
-                    System.exit(0);
-                    break;
+                    return;
 
                 default:
                     System.out.println("Opcion incorrecta");
             }
-        }
+        } 
     }
 }
