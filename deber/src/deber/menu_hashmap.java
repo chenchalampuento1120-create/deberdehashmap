@@ -12,5 +12,10 @@ import java.util.Scanner;
 import java.util.HashMap;
 
 public class menu_hashmap {
-    
-}
+
+    static HashMap<String, String> peliculas = new HashMap<>();
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int opcion;
