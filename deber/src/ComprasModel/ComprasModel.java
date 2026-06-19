@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class ComprasModel {
     public ArrayList<String> productos;
     public ArrayList<String> historial;
-    public
+    public HashMap<String, Integer> carrito;
     
     
     
