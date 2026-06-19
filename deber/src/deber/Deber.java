@@ -8,13 +8,18 @@ package deber;
  *
  * @author PC
  */
-public class Deber {
+import ComprasView.ComprasView;
 
-    /**
-     * @param args the command line arguments
-     */
+/**
+ *
+ * @author Estudiante
+ */
+public class Deber{
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        ComprasView vista = new ComprasView();
+        vista.menu();
+
     }
-    
 }
