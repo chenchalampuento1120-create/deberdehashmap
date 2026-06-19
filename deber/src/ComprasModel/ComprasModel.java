@@ -4,13 +4,14 @@
  */
 package ComprasModel;
 import java.util.ArrayList;
-
+import java.util.HashMap;
 
 /**
  *
  * @author PC
  */
 public class ComprasModel {
+    public ArrayList<String> productos;
     
     
 }
