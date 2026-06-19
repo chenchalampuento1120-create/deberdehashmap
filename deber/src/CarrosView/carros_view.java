@@ -65,6 +65,28 @@ public class carros_view {
             System.out.println("Carro no encontrado");
                     }
                 break;
+        case 4:
+             System.out.println("Codigo:");
+               codigo = sc.nextInt();
+
+               if (controlador.eliminarCarro(codigo)) {
+                   System.out.println("Carro eliminado");
+                } else {
+               System.out.println("Carro no encontrado");
+                }
+               break;
+
+        case 5:
+            System.out.println("Hasta luego");
+            System.exit(0);
+            break;
+
+        default:
+            System.out.println("Opcion incorrecta");
+        }
+    }
+     }
+}
 
              
 
