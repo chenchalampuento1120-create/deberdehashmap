@@ -41,5 +41,31 @@ public class carros_view {
             carros_model carro = new carros_model(codigo, marca, modelo, precio);
             controlador.agregarCarro(carro);
             break;
+        case 2:
+            controlador.listarCarros();
+               break;
+
+        case 3:
+           System.out.println("Codigo:");
+               codigo = sc.nextInt();
+               sc.nextLine();
+
+           System.out.println("Nueva marca:");
+                    marca = sc.nextLine();
+
+           System.out.println("Nuevo modelo:");
+                    modelo = sc.nextLine();
+
+            System.out.println("Nuevo precio:");
+               precio = sc.nextDouble();
+
+                if (controlador.actualizarCarro(codigo, marca, modelo, precio)) {
+            System.out.println("Carro actualizado");
+                } else {
+            System.out.println("Carro no encontrado");
+                    }
+                break;
+
+             
 
                
