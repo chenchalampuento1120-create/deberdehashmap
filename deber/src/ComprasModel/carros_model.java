@@ -9,5 +9,8 @@ package ComprasModel;
  * @author PC
  */
 public class carros_model {
-    
-}
+
+    private int codigo;
+    private String marca;
+    private String modelo;
+    private double precio;
