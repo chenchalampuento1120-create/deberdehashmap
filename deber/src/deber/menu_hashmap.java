@@ -86,3 +86,10 @@ public class menu_hashmap {
 
         System.out.println("Pelicula registrada con exito");
     }
+
+    public static void listar_peliculas() {
+
+        if (peliculas.isEmpty()) {
+            System.out.println("No existen peliculas registradas");
+            return;
+        }
