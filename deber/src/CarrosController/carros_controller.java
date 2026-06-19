@@ -18,4 +18,17 @@ public class carros_controller {
         System.out.println("Carro agregado");
     }
     
+    public void listarCarros() {
+        for (carros_model carro : listaCarros) {
+            System.out.println(carro);
+        }
+    }
+    public carros_model buscarCarro(int codigo) {
+        for (carros_model carro : listaCarros) {
+            if (carro.getCodigo() == codigo) {
+                return carro;
+            }
+        }
+        return null;
+    }
 }
