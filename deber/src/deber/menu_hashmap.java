@@ -34,3 +34,34 @@ public class menu_hashmap {
                 System.out.println("Error ingrese solo numeros");
                 sc.next();
             }
+
+            opcion = sc.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    insertar_pelicula();
+                    break;
+
+                case 2:
+                    listar_peliculas();
+                    break;
+
+                case 3:
+                    actualizar_pelicula();
+                    break;
+
+                case 4:
+                    eliminar_pelicula();
+                    break;
+
+                case 5:
+                    System.out.println("Saliendo del programa...");
+                    break;
+
+                default:
+                    System.out.println("Opcion invalida");
+            }
+
+        } while (opcion != 5);
+
+    }
